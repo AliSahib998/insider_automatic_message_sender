@@ -36,7 +36,7 @@ docker compose up --build
 
 Once the app is running, access:
 
-👉 `http://localhost:3015/swagger/index.html`
+👉 `http://localhost:3015/api/v1/messages/swagger/index.html#/`
 
 ## 📡 API Endpoints
 
@@ -46,4 +46,3 @@ Once the app is running, access:
 | `POST` | `/api/v1/messages/stop`    | Stop the automatic sender             |
 | `POST` | `/api/v1/messages/`        | Create new message will be sent later |
 | `GET`  | `/api/v1/messages/sent`    | List sent messages                    |
-| `GET`  | `/swagger/index.html`      | Open Swagger UI                       |
