@@ -28,7 +28,7 @@ A Golang-based microservice that automatically sends scheduled messages via webh
 ### 🚀 Run with Docker
 
 ```bash
-docker compose up --build
+docker compose up -d
 
 ```
 
