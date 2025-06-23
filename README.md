@@ -9,7 +9,7 @@ A Golang-based microservice that automatically sends scheduled messages via webh
 - Caches `messageId + timestamp` in Redis
 - Swagger API documentation
 - Dockerized with PostgreSQL and Redis
-- 
+
 ## 🧰 Tech Stack
 
 - Go 1.23+
