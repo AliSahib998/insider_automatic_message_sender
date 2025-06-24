@@ -21,9 +21,11 @@ func (r *MessagesRepository) GetDeliveredMessages() ([]*Message, error) {
 	return messages, nil
 }
 
-func (r *MessagesRepository) GetUndeliveredMessages() ([]*Message, error) {
+func (r *MessagesRepository) GetUndeliveredTwoMessages() ([]*Message, error) {
 	var messages []*Message
-	result := r.db.Where("is_sent = ?", false).Find(&messages)
+	var count = int64(2)
+	result := r.db.Where("is_sent = ?", false).Find(&messages).
+		Count(&count)
 	if result.Error != nil {
 		return nil, result.Error
 	}

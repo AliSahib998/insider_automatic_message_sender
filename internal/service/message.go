@@ -61,7 +61,7 @@ func (m *MessageService) StartMessageSender(ctx context.Context) error {
 }
 
 func (m *MessageService) processUndeliveredMessages(ctx context.Context) {
-	messages, err := m.messageRepository.GetUndeliveredMessages()
+	messages, err := m.messageRepository.GetUndeliveredTwoMessages()
 	if err != nil {
 		log.Printf("Error fetching undelivered messages: %v", err)
 		return
