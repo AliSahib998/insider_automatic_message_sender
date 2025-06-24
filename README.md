@@ -4,7 +4,7 @@ A Golang-based microservice that automatically sends scheduled messages via webh
 
 ## 🚀 Features
 
-- Sends unsent messages every 2 minutes
+- Sends 2 unsent messages every 2 minutes
 - Truncates message content to 160 characters
 - Caches `messageId + timestamp` in Redis
 - Swagger API documentation
